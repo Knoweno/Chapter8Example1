@@ -1,0 +1,18 @@
+﻿@model Chapter8Example1.Models.Applicant
+<p>Fill out all fields</p>
+
+<form asp-controller="Admission"
+asp-action="Decision" method="post">
+
+<fieldset>
+        <label asp-for="ApplicantName"></label>
+        <input asp-for="ApplicantName" />
+</fieldset>
+    <fieldset>
+        <label asp-for="ACTScore"></label>
+        <input asp-for="ACTScore" />
+    </fieldset>
+    <button type="submit">Submit</button>
+
+
+</form>
